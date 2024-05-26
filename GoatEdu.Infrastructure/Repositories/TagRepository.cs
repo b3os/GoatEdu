@@ -17,6 +17,13 @@ public class TagRepository : BaseRepository<Tag>, ITagRepository
         _context = context;
     }
 
+    //
+    //
+    //
+    // Lỗi ở đây nè anh :))
+    //
+    //
+    //
     public async Task<List<Tag>> GetTagByFilters(TagQueryFilter queryFilter)
     {
         var tags = _entities.AsQueryable();
